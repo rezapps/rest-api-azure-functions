@@ -1,0 +1,43 @@
+@url = http://localhost:7071/api/todos
+
+# @name newTask
+POST {{url}}
+content-type: application/json
+
+{
+    "Task": "wake up"
+}
+
+###
+WAIT FOR {{newTask.response}}
+
+###
+@id = {{newTask.response.body.id}}
+
+
+
+### Get All todos
+
+GET {{url}}
+content-type: application/json
+
+### Get the newly created todo by id
+
+GET {{url}}/{{id}}
+content-type: application/json
+
+
+### Update the newly created todo
+
+PUT {{url}}/{{id}}
+content-type: application/json
+
+{
+    "Task": "wake up",
+    "IsComplete": true
+}
+
+### Delete the newly created todo
+
+DELETE {{url}}/{{id}}
+content-type: application/json

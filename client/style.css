@@ -1,0 +1,42 @@
+.done {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.button {
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.todosDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem 0;
+    max-width: 400px;
+}
+
+li {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.todo {
+    width: 80%;
+    text-align: left;
+}
