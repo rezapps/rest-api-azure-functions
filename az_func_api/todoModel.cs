@@ -1,6 +1,6 @@
 using System;
 
-namespace az-func-api;
+namespace az_func_api;
 public class Todo
 {
     public string Id { get; set; } = Guid.NewGuid().ToString("n");
